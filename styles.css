@@ -1,0 +1,108 @@
+body {
+    background-color: #5750B0; /* Updated background color */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+}
+
+header .balance {
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 70px); /* Set width of boxes */
+    grid-gap: 10px; /* Gap between boxes */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#game-board div {
+    width: 70px; /* Set width of boxes */
+    height: 70px; /* Set height to be the same as width */
+    background-color: #444;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for hover effect */
+    border-radius: 15px; /* Rounded edges for a circular curve */
+}
+
+#game-board div:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighten color when hovered */
+}
+
+#game-board .revealed {
+    background-color: #777;
+}
+
+form {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label, form input, form button {
+    margin: 5px 0;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+    border-radius: 15px; /* Rounded corners */
+}
+
+form button:hover {
+    background-color: #45a049; /* Darker shade when hovered */
+    transform: translateY(-2px); /* Make button appear to lift up */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for lifting effect */
+}
